@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package go.micro.lzx.user;
+
+service userService {
+    // 添加新用户
+    rpc GetTimeOrAddUser (Username) returns (UserTimeResponse) {}
+}
+
+// 用户名称
+message Username {
+    string name = 1;     // 名字
+}
+
+
+// 返回的用户时间
+message UserTimeResponse {
+    int32 time = 1;
+}

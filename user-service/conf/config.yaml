@@ -1,0 +1,3 @@
+runmode: debug                 # 开发模式, debug, release, test
+addr: :8083                  # HTTP绑定端口
+name: user_api              # API Server的名字
